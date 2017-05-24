@@ -11,4 +11,16 @@ remove by query .mapping for the type persists so perform a reindex
 }
 ```
 
+Reindexing in elasticsearch
 
+```javascript
+POST /_reindex
+{
+  "source": {
+    "index": "twitter"
+  },
+  "dest": {
+    "index": "new_twitter"
+  }
+}
+```
