@@ -24,3 +24,13 @@ POST /_reindex
   }
 }
 ```
+finad all documents of a particular `type`:
+```javascript 
+{
+  "query": {
+    "term": {
+      "_type": "adwordsCampaignID"
+    }
+  }
+}
+```
